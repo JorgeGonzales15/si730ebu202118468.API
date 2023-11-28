@@ -1,0 +1,13 @@
+using AutoMapper;
+using si730ebu202118468.API.Inventory.Domain.Models;
+using si730ebu202118468.API.Inventory.Resources;
+
+namespace si730ebu202118468.API.Inventory.Mapping;
+
+public class ModelToResourceProfile : Profile
+{
+    public ModelToResourceProfile()
+    {
+        CreateMap<Product, ProductResource>();
+    }
+}
